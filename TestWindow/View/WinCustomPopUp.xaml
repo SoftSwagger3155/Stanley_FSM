@@ -1,0 +1,40 @@
+﻿<Window x:Class="Test_FSM_WPF.View.WinCustomPopUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test_FSM_WPF.View"
+        mc:Ignorable="d"
+        Title="WinCustomPopUp" Height="450" Width="800" Loaded="Window_Loaded" WindowStyle="None" Closed="Window_Closed" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="_lbl_Msg"
+               Content=""
+               FontSize="30"   
+               VerticalContentAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalContentAlignment="Center"
+               HorizontalAlignment="Center"
+               Margin="32,29,35,155" 
+               Width="725" 
+               Height="236"
+               Background="LightGray"/>
+        <Button x:Name="btn_OK" 
+                Content="Ok"
+                FontSize="20"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Width="130"
+                Height="50" 
+                Margin="628,0,0,10"
+                Click="Btn_OK_Click"/>
+        <Button x:Name="btn_No" 
+            Content="No"
+            FontSize="20"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Left"
+            Width="130"
+            Height="50" 
+            Margin="489,0,0,10"
+            Click="Btn_No_Click"/>
+    </Grid>
+</Window>

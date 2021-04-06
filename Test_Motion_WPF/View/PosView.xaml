@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Test_Motion_WPF.View.PosView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Test_Motion_WPF.View"
+              mc:Ignorable="d" d:DesignWidth="150" Height="35" Background="Black">
+    <Grid>
+        <Label x:Name="lblTag"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Content="AlignZ"
+               Foreground="GhostWhite" 
+               Height="35" 
+               Width="50"/>
+        <Label x:Name="lblMotorPos"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Right"
+               Content="{Binding MotorPosStr, UpdateSourceTrigger=PropertyChanged}" 
+               Foreground="Green" 
+               FontSize="16"
+               Margin="48,0,0,0" Width="70" Height="35"/>
+        <Label Content="mm"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Left"
+               Foreground="White" 
+               Margin="120,0,0,0" 
+               Background="Black"
+               Width="32" 
+               Height="35"/>
+    </Grid>
+</UserControl>
