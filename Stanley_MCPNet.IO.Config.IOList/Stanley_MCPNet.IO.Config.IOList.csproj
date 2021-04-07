@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FCBE168B-00BE-44DB-A88B-5C3158164151}</ProjectGuid>
+    <ProjectGuid>{7D41D405-5756-407D-9779-E253C8E04542}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Stanley_MCPNet.IOCard</RootNamespace>
-    <AssemblyName>Stanley_MCPNet.IOCard</AssemblyName>
+    <RootNamespace>Stanley_MCPNet.IO.Config.IOList</RootNamespace>
+    <AssemblyName>Stanley_MCPNet.IO.Config.IOList</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Stanley_MCPNet.IO">
+      <HintPath>..\Stanley_MCPNet.IO\bin\Debug\Stanley_MCPNet.IO.dll</HintPath>
+    </Reference>
     <Reference Include="Stanley_Utility">
       <HintPath>..\Stanley_Utility\bin\Debug\Stanley_Utility.dll</HintPath>
     </Reference>
@@ -45,18 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Definition.cs" />
-    <Compile Include="IIOCard.cs" />
-    <Compile Include="IOCardObj.cs" />
-    <Compile Include="MccIOCard.cs" />
-    <Compile Include="PortType.cs" />
+    <Compile Include="ConfigList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Stanley_MCPNet.IO\Stanley_MCPNet.IO.csproj">
-      <Project>{B80E778B-4F83-4768-81F5-F12D42C47552}</Project>
-      <Name>Stanley_MCPNet.IO</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

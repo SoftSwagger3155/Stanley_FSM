@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stanley_MCPNet.IOCard", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stanley_MCPNet.IO", "Stanley_MCPNet.IO\Stanley_MCPNet.IO.csproj", "{B80E778B-4F83-4768-81F5-F12D42C47552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stanley_MCPNet.IO.Config.IOList", "Stanley_MCPNet.IO.Config.IOList\Stanley_MCPNet.IO.Config.IOList.csproj", "{7D41D405-5756-407D-9779-E253C8E04542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{B80E778B-4F83-4768-81F5-F12D42C47552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B80E778B-4F83-4768-81F5-F12D42C47552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B80E778B-4F83-4768-81F5-F12D42C47552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D41D405-5756-407D-9779-E253C8E04542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D41D405-5756-407D-9779-E253C8E04542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D41D405-5756-407D-9779-E253C8E04542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D41D405-5756-407D-9779-E253C8E04542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,9 +12,10 @@ namespace Stanley_MCPNet.IOCard
         string ErrorMsg { get; set; }
         bool IsSimulate { get; set; }
         int CardNumber { get; set; }
+        List<IOCardObj> CardList { get; set; }
 
         void AddDefaultIOs();
-        bool IsDuplicateCard(IIOCard card);
+        bool IsDuplicateCard(IOCardObj card);
         bool LoadXml(string fileName);
         bool SaveXml(string fileName);
         bool InitCard();
