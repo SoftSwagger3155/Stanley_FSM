@@ -148,6 +148,26 @@ namespace Stanley_MCPNet.IO
             }
         }
 
+        public void UpdateStateFromBufferByMcc800(int checkState)
+        {
+            if (!this.simulate)
+            {
+                if (!this.enable)
+                {
+                    this.State = IOState.Unknown;
+                }
+                else if (this.iOBase == null)
+                {
+                    this.State = IOState.Unknown;
+                }
+                else if (this.bufNo >= 0 && this.PortBuf != null && this.bufNo < this.PortBuf.Length)
+                {
+                    bool flag = checkState == 0;
+                    this.State = (((this.logic == 1) ? flag : (!flag)) ? IOState.On : IOState.Off);
+                }
+            }
+        }
+
         public int cardNo;
         public int portNo;
         public int bit;

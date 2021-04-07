@@ -871,7 +871,7 @@ namespace Stanley_MCPNet.Motion.Mcc800
 
         public override void start_ta_move(double pos, double strvel, double maxvel, double tacc, double tdec)
         {
-
+            //Pos: Pulse Pos
             TargetPos = get_mm(pos);
 
             double dist = pos - currentPulse;
