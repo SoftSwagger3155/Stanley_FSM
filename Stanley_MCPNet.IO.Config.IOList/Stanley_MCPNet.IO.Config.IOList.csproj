@@ -35,9 +35,6 @@
     <Reference Include="Stanley_MCPNet.IO">
       <HintPath>..\Stanley_MCPNet.IO\bin\Debug\Stanley_MCPNet.IO.dll</HintPath>
     </Reference>
-    <Reference Include="Stanley_MCPNet.IOCard">
-      <HintPath>..\Stanley_MCPNet.IOCard\bin\Debug\Stanley_MCPNet.IOCard.dll</HintPath>
-    </Reference>
     <Reference Include="Stanley_Utility">
       <HintPath>..\Stanley_Utility\bin\Debug\Stanley_Utility.dll</HintPath>
     </Reference>
