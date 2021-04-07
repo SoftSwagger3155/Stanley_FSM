@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using System.ComponentModel;
+using Stanley_MCPNet.IOCard;
 
 namespace Stanley_MCPNet.IO.Config.IOList
 {
@@ -187,7 +188,7 @@ namespace Stanley_MCPNet.IO.Config.IOList
         {
             for (int i = 0; i < this.iOList.Count; i++)
             {
-                this.iOList[i].simulate = this.iOCard.Simulation;
+                this.iOList[i].simulate = this.iOCard.IsSimulate;
             }
         }
 
@@ -214,7 +215,7 @@ namespace Stanley_MCPNet.IO.Config.IOList
             return XmlHelper.SaveXml(objectType, objectToStore, fileName);
         }
 
-        public virtual object InitList(IOCard iOCard)
+        public virtual object InitList(MccIOCard iOCard)
         {
             this.iOCard = iOCard;
             this.iOList = new List<IOElement>();
@@ -366,7 +367,7 @@ namespace Stanley_MCPNet.IO.Config.IOList
         [XmlIgnore]
         public IOBase iOBase;
         [XmlIgnore]
-        public IOCard iOCard;
+        public MccIOCard iOCard;
         [XmlIgnore]
         public List<IOElement> iOList;
         private Thread scanningThred;
