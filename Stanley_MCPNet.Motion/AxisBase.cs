@@ -312,6 +312,8 @@ namespace Stanley_MCPNet.Motion
                     this.CurrentPulse = this.get_current_pos();
                     this.CurrentPhysicalPos = this.get_mm(this.currentPulse);
                     Thread.Sleep(10);
+                    this.AnalogInputValue = this.GetAnalogValue();
+                    Thread.Sleep(10);
                     this.ReadServoStatus();
                     this.StatusReadingTime = (DateTime.Now - now).TotalMilliseconds;
                     now = DateTime.Now;
@@ -716,6 +718,19 @@ namespace Stanley_MCPNet.Motion
                     result = ((this.lastDirection == AxisBase.LastMoveDirection.Forward) ? "Fw" : "Bw");
                 }
                 return result;
+            }
+        }
+
+        public int AnalogInputValue
+        {
+            get
+            {
+                return this.analogInputValue;
+            }
+            set
+            {
+                this.analogInputValue = value;
+                this.OnPropertyChanged("AnalogInputValue");
             }
         }
 
@@ -1476,6 +1491,7 @@ namespace Stanley_MCPNet.Motion
         public abstract void start_a_arc_xy(ref AxisBase pxmtr, ref AxisBase pymtr, short Dir);
         public abstract void start_a_arc_zu(ref AxisBase pxmtr, ref AxisBase pymtr, short Dir);
         public abstract void start_a_arc2(ref AxisBase pxmtr, ref AxisBase pymtr, short Dir);
+        public abstract int GetAnalogValue();
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string info)
         {
@@ -1546,6 +1562,7 @@ namespace Stanley_MCPNet.Motion
         protected string interlockWaringMsg = "";
         private string sErr = "";
         protected DateTime commmandStartTime = DateTime.Now;
+        private int analogInputValue = 0;
 
         public enum LastMoveDirection
         {
@@ -1571,5 +1588,6 @@ namespace Stanley_MCPNet.Motion
         }
 
         public delegate bool InitDelegate(int card);
+
     }
 }

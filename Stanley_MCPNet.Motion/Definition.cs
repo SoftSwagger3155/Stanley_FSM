@@ -39,4 +39,12 @@ namespace Stanley_MCPNet.Motion
         RDY = 512,
         DSTP = 1024
     }
+
+    public enum ComMode
+    {
+        COM_PCI_BUS,
+        COM_ETHERNET,
+        COM_SERIAL,
+        COM_DIRECT
+    }
 }
