@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Stanley_FSM", "Test_St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stanley_MCPNet.Data", "Stanley_MCPNet.Data\Stanley_MCPNet.Data.csproj", "{E681C054-E665-4D80-924D-8C26BCE69699}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stanley_MCPNet.Motion", "Stanley_MCPNet.Motion\Stanley_MCPNet.Motion.csproj", "{805EAA40-D97D-4C56-B32C-E99DFBC59B45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stanley_Utility", "Stanley_Utility\Stanley_Utility.csproj", "{A6D29A22-AC08-4AB6-9FC3-A1E800E950D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{E681C054-E665-4D80-924D-8C26BCE69699}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E681C054-E665-4D80-924D-8C26BCE69699}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E681C054-E665-4D80-924D-8C26BCE69699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805EAA40-D97D-4C56-B32C-E99DFBC59B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805EAA40-D97D-4C56-B32C-E99DFBC59B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805EAA40-D97D-4C56-B32C-E99DFBC59B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805EAA40-D97D-4C56-B32C-E99DFBC59B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D29A22-AC08-4AB6-9FC3-A1E800E950D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D29A22-AC08-4AB6-9FC3-A1E800E950D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D29A22-AC08-4AB6-9FC3-A1E800E950D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D29A22-AC08-4AB6-9FC3-A1E800E950D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
